@@ -56,6 +56,8 @@ public void onButton2Clicked(View v) {
 
 - **rmdir dir_name** : 디렉토리 지우기
 
-- **git add dir_name** :
+- **git add dir_name**
 
 - **git commit -m “내용”**
+
+- **git pull**
