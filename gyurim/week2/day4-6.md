@@ -85,10 +85,11 @@
       - android:layout_above=”버튼” : 버튼의 위쪽까지 배치
 
 
-##### Linear layout vs Relative layout
+#### Linear layout vs Relative layout
+```
   - Linear layout : 현재 화면이 가득 찬 경우 다른 넣고 싶은 걸 넣지 못한다.
   -	Relative layout : 현재 화면이 가득 찼더라도 편하게 추가 가능 ( 장점 )
------------
+```
 
 
 5.	테이블 레이아웃.
@@ -142,15 +143,15 @@
 - onClick : onClick의 값엔 소스코드에서 사용할 method 이름이 들어감 -> 버튼이 클릭되었을 때, 이 method를 실행
   * onClick 방법  
     + 1) Onclick의 속성에 입력 후, source코드에 동일한 이름의 method(함수) 정함
-~~~java
-  Public void onButton1Clicked(View v) { Toast.makeText(getApplicationContext(),”시작버튼이 눌렸어요”, Toast.Length_Long).show();}
-~~~
+    ~~~java
+      Public void onButton1Clicked(View v) { Toast.makeText(getApplicationContext(),”시작버튼이 눌렸어요”, Toast.Length_Long).show();}
+    ~~~
 
     + 2)	Xml layout에 버튼을 찾은 뒤, 버튼에 Click Event를 처리
-~~~java
-    Button button2 = (button) findCiewById(R.id.button2);
-     button2.setOnClickListener(new View.OnClickListener()){ public void onClick(View v) { Toast.makeText(getApplicationContext(),”중지버튼이 눌렸어요”, Toast.Length_Long).show(); }
-~~~
+    ~~~java
+        Button button2 = (button) findCiewById(R.id.button2);
+         button2.setOnClickListener(new View.OnClickListener()){ public void onClick(View v) { Toast.makeText(getApplicationContext(),”중지버튼이 눌렸어요”, Toast.Length_Long).show(); }
+    ~~~
 
 
 ### Image View
