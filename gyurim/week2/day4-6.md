@@ -138,21 +138,21 @@
 - onClick 방법
 
 ###### 1) Onclick의 속성에 입력 후, source코드에 동일한 이름의 method(함수) 정함
-  ~~~java
+~~~java
   Public void onButton1Clicked(View v) { Toast.makeText(getApplicationContext(),”시작버튼이 눌렸어요”, Toast.Length_Long).show();}
-  ~~~
+~~~
 
 ###### 2)	Xml layout에 버튼을 찾은 뒤, 버튼에 Click Event를 처리
-    ~~~java
+~~~java
     Button button2 = (button) findCiewById(R.id.button2);
      button2.setOnClickListener(new View.OnClickListener()){ public void onClick(View v) { Toast.makeText(getApplicationContext(),”중지버튼이 눌렸어요”, Toast.Length_Long).show(); }
-    ~~~
+~~~
 
 ### Image View
   - 이미지를 사용
   - Android:src=”@drawble/ic_launcher” : drawble 폴더 안에 ic_launcher이름을 가진 사진을 첨부 (확장자는 생략)
   - 버튼을 클릭해 2개의 이미지뷰가 번갈아가면서 출력되게 하는 코드 ( mainactivity.java)
-      ~~~java
+~~~java
       public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     ImageView imageView2;
@@ -184,8 +184,6 @@
       }
 }
 ~~~
-
---------
 
 #### Want to more know
 강의에선 default로 relative layer로 설정이 되어있었는데 내 안드로이드 스튜디오에는 constrain layer로 되어있음. Constrain layer와 relative layer, linear layer의 차이점이 궁금하다
