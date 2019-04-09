@@ -1,5 +1,5 @@
 # LandVibe Android Study Summary
-
+[Lecture](https://www.inflearn.com/course/do-it-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EA%B0%95%EC%A2%8C-2/) 1강 - 7강
 ## Day 1
 
 ### 안드로이드에 대한 이해
@@ -61,3 +61,5 @@ public void onButton2Clicked(View v) {
 - **git commit -m “내용”**
 
 - **git pull**
+
+#### Cannot Understand
