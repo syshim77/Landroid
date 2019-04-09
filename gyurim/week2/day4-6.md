@@ -110,10 +110,11 @@
 
 
 *주의사항*  
+```
  파일을 생성할 때 application name에 my가 포함되도록 name을 짓자!  
  Class와 이름이 충돌할 수 있기 때문에.
+```
 
------------
 ### Button의 property
  - layout_width를 wrap_content로 설정 : 버튼 속 message 크기만큼 버튼의 가로
  - layout_width를 match_parent로 설정 : 버튼의 가로가 디바이스 가로 만큼 설정
@@ -140,18 +141,17 @@
 -	Layout::weight : 화면 분할을 해서 각각에 공간을 할당. 작은 숫자일수록 많은 공간할당
 - onClick : onClick의 값엔 소스코드에서 사용할 method 이름이 들어감 -> 버튼이 클릭되었을 때, 이 method를 실행
   * onClick 방법  
-###### 1) Onclick의 속성에 입력 후, source코드에 동일한 이름의 method(함수) 정함
+    + 1) Onclick의 속성에 입력 후, source코드에 동일한 이름의 method(함수) 정함
 ~~~java
   Public void onButton1Clicked(View v) { Toast.makeText(getApplicationContext(),”시작버튼이 눌렸어요”, Toast.Length_Long).show();}
 ~~~
 
-###### 2)	Xml layout에 버튼을 찾은 뒤, 버튼에 Click Event를 처리
+    + 2)	Xml layout에 버튼을 찾은 뒤, 버튼에 Click Event를 처리
 ~~~java
     Button button2 = (button) findCiewById(R.id.button2);
      button2.setOnClickListener(new View.OnClickListener()){ public void onClick(View v) { Toast.makeText(getApplicationContext(),”중지버튼이 눌렸어요”, Toast.Length_Long).show(); }
 ~~~
 
---------
 
 ### Image View
   - 이미지를 사용
@@ -190,6 +190,7 @@
 }
 ~~~
 
+--------
 #### Want to more know
 강의에선 default로 relative layer로 설정이 되어있었는데 내 안드로이드 스튜디오에는 constrain layer로 되어있음. Constrain layer와 relative layer, linear layer의 차이점이 궁금하다
 
