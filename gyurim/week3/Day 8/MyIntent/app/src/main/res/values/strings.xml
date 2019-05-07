@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Intent</string>
+    <string name="buttona">전화 걸기</string>
+
+    <string name="text2">메뉴 화면 입니다.</string>
+    <string name="returntext">돌아가기</string>
+    <string name="title_activity_menu">MenuActivity</string>
+</resources>

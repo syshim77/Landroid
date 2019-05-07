@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyDialog</string>
+    <string name="dialog">대화상자 띄우기</string>
+</resources>
