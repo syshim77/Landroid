@@ -18,6 +18,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButton1Clicked(View v) {
+        SubLayout layout1 = new SubLayout(this);
+
+        LinearLayout container = (LinearLayout)findViewById(R.id.container);
+        container.addView(layout1);
+
+        /*
         LinearLayout container = (LinearLayout) findViewById(R.id.container);
 
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -30,5 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "부분화면의 버튼이 눌렸습니다.", Toast.LENGTH_LONG).show();
             }
         });
+        */
     }
 }
