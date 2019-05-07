@@ -46,4 +46,4 @@
 * 중지(Stopped) : 다른 액티비티에 의해 완전히 가려져 보이지 않는 상태
 
 --------
-Cannot Understand
+#### Want to more know
