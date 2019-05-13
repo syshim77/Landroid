@@ -3,7 +3,7 @@
 #### Service(1)
 1. 서비스
   - 백그라운드에서 실행되는 애플리케이션 구성요소
-  - AndroidManifest.xml 파일 안에 <service> 태그를 이용하여 선언
+  - AndroidManifest.xml 파일 안에 service 태그를 이용하여 선언
   - 메인 스레드에서 동작
     + CPU를 많이 쓰거나 blocking을 필요로 하는 작업들은 thread를 새로 만들어 주어야 함
 2. 브로드캐스트 수신자
