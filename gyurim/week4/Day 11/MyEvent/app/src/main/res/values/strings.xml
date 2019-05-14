@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyEvent</string>
+    <string name="button1">시작</string>
+    <string name="text1">종료</string>
+</resources>

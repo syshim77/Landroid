@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyPager</string>
+    <string name="button1">두번째 화면 보기</string>
+
+</resources>
