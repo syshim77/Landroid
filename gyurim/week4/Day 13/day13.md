@@ -20,6 +20,6 @@
 #### Want to more know
 
 
-
+--------
 #### What I learned
 1. (Relative layout에서) android:layout_alignParentStart="true" 대신, (Linear layout에서) android:layout_gravity="start"
