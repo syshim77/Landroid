@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyProgress</string>
+    <string name="button1">진행상태 값 설정하기</string>
+    <string name="button2">진행상태 대화상자</string>
+    <string name="text1">설정한 값 : 0</string>
+    <string name="contents">설정된 값 : </string>
+    <string name="item1">검색</string>
+</resources>

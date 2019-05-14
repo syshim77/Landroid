@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyWebView</string>
+    <string name="button1">page 띄우기</string>
+</resources>

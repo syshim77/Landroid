@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyPageSliding</string>
+    <string name="text1">바탕화면</string>
+    <string name="text2">슬라이딩화면</string>
+    <string name="button1">열기</string>
+</resources>

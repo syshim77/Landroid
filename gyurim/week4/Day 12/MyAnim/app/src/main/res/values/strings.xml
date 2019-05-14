@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyAnim</string>
+    <string name="text1">안녕하세요</string>
+    <string name="button1">시작</string>
+</resources>
