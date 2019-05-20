@@ -14,6 +14,7 @@
 
 ## 40강
 ?? android:layout_below="@+id/textView" 없음
+---> margin_bottom
 
 ## 41강
 ?? unknown error - log
