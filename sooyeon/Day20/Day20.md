@@ -2,7 +2,7 @@
 
 #### Intro of Graphic part & Draw Rectangle
 1. 뷰 위에 그래픽을 그리는 순서
-  1) 새로운 클래스를 만들고 뷰를 상속받음
+    1) 새로운 클래스를 만들고 뷰를 상속받음
   ```java
   public class CustomView extends View {
     public CustomView(Context context) {  // 생성자는 늘 2개여야함
@@ -10,7 +10,7 @@
     }
   }
   ```
-  2) 페인트 객체를 초기화하고 필요한 속성을 설정함
+    2) 페인트 객체를 초기화하고 필요한 속성을 설정함
   ```java
   public class CustomView extends View {
     private Paint paint;
@@ -21,7 +21,7 @@
     }
   }
   ```
-  3) onDraw() 메소드 내에 사각형을 그리는 메소드를 호출함
+    3) onDraw() 메소드 내에 사각형을 그리는 메소드를 호출함
   ```java
   public class CustomView extends View {
     ...
@@ -31,7 +31,7 @@
     }
   }
   ```
-  4) onTouch() 메소드 내에 터치 이벤트를 처리하는 코드를 넣음
+    4) onTouch() 메소드 내에 터치 이벤트를 처리하는 코드를 넣음
   ```java
   public class CustomView extends View {
     ...
@@ -45,7 +45,7 @@
     }
   }
   ```
-  5) 새로 만든 뷰를 메인 액티비티에 추가함
+    5) 새로 만든 뷰를 메인 액티비티에 추가함
   ```java
   public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
