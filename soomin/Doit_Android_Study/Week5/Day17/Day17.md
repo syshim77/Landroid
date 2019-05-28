@@ -4,8 +4,31 @@
 + 콤보박스 처럼 여러가지 중에 선택할 수 있음
 
 >**이해되지 않은 부분:**
-  - MySpinner 프로젝트 실행 오류
+  - MySpinner 프로젝트 실행 오류 해결
+  --> click이 아니라 selected을 사용해야한다.
+  ~~~java
+  // 이후
+  spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), "선택된 아이템: " + names[position], Toast.LENGTH_LONG).show();
+            }
 
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+// 이전
+  spinner.setOnItemClickListener(new AdapterView.OnItemSelectedListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), "선택된 아이템 : " + names[position], Toast.LENGTH_LONG).show();
+            }
+
+        });
+
+  ~~~
 
 ## [61강] 리스트뷰 만들기
 어댑터를 정의하지 않고 기존 API를 사용하여 리스트뷰를 만들 수 있음  
@@ -15,8 +38,12 @@
 >**이해되지 않은 부분:**  
 오류를 해결하기 위해서는 아래의 변경사항을 적용해야하는데, 이유를 모르겠음  
 1. 아래의 코드를 삭제해야함  
-`setContentView(R.layout.activity_main);``
+`setContentView(R.layout.activity_main);`
 2. 리스트에 id를 부여  
+-> `public class MainActivity extends ListActivity`를 통해서 ListActivity를 상속받았기 때문에
+`<ListView
+        android:id="@+id/list" /> `미리 구현되어 있던 list라는 아이디를 가져와서 쓰고자 id를 list로 부여하는 것이고
+`setContentView(R.layout.activity_main);`도 중복으로 선언하면 안되기때문에 지워준 것이다.
 
 ## [62강] 갤러리 사용하기
 + 사진을 나열해서 볼 수 있도록 하는 간단한 '선택위젯'
@@ -51,3 +78,5 @@
 
 >**이해되지 않은 부분:**
   - MyGrid 프로젝트 실행시, 버튼과 그리드뷰가 겹쳐서 보이는 현상
+  --> constraint layout의 버튼을 먼저 놓고, 4면을 전부 연결
+  --> 이후 하단을 제외하여 레이아웃을 버튼 아래에 붙이고 양사이드를 화면에 붙인다.
