@@ -30,4 +30,3 @@
 
 --------
 #### Want to more know
-1. MyList의 SingeritemView.java에서 R.id.singer_item (오류) 대신, R.layout.singer_item (오류X) 사용 이유
